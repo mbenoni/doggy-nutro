@@ -1,5 +1,9 @@
 :root {
   --green: #31451b;
+  --black: #191919;
+  --light-gray: #f0f0f0;
+  --dark-gray: #ababab;
+  --white: #ffffff;
 }
 
 * {
@@ -8,8 +12,8 @@
 
 body {
   margin: 0;
-  background-color: #f0f0f0;
-  color: #191919;
+  background-color: var(--light-gray);
+  color: var(--black);
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -41,7 +45,7 @@ h3 {
 }
 
 header {
-  background-color: #ffffff;
+  background-color: var(--white);
   padding: 31px 16px;
   margin-bottom: 32px;
   box-shadow: 0 4px 75px 0 rgba(0, 0, 0, 0.07);
