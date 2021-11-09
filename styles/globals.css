@@ -35,11 +35,12 @@ h3 {
 
 header {
   background-color: #ffffff;
-  padding: 28px;
+  padding: 31px 16px;
   box-shadow: 0 4px 75px 0 rgba(0, 0, 0, 0.07);
 }
 
 a {
+  font-size: 14px;
   font-weight: 500;
   color: var(--green);
   text-decoration-thickness: 2px;
@@ -58,5 +59,19 @@ a {
 }
 
 .logo {
-  width: 267px;
+  width: 162px;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 28px 16px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 267px;
+  }
 }
