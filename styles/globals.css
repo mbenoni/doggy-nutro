@@ -15,25 +15,34 @@ body {
   line-height: 1.5;
 }
 
+p {
+  margin: 0 0 16px;
+}
+
 h1,
 h2,
 h3 {
   font-weight: 400;
 }
 
-h1,
+h1 {
+  font-size: 24px;
+  margin: 0 0 8px;
+}
+
 h2 {
   font-size: 24px;
+  margin: 0 0 25px;
 }
 
 h3 {
   font-size: 18px;
+  margin: 0 0 8px;
 }
 
 header {
   background-color: #ffffff;
   padding: 31px 16px;
-  box-shadow: 0 4px 75px 0 rgba(0, 0, 0, 0.07);
 }
 
 main {
@@ -70,14 +79,17 @@ a {
 
   h1 {
     font-size: 48px;
+    margin: 0 0 14px;
   }
 
   h2 {
     font-size: 34px;
+    margin: 0 0 32px;
   }
 
   h3 {
     font-size: 24px;
+    margin: 0 0 16px;
   }
 
   a {
