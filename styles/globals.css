@@ -32,3 +32,31 @@ h2 {
 h3 {
   font-size: 24px;
 }
+
+header {
+  background-color: #ffffff;
+  padding: 28px;
+  box-shadow: 0 4px 75px 0 rgba(0, 0, 0, 0.07);
+}
+
+a {
+  font-weight: 500;
+  color: var(--green);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 267px;
+}
