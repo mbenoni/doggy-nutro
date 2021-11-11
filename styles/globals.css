@@ -44,7 +44,9 @@ h3 {
   margin: 0 0 8px;
 }
 
-input {
+input,
+select,
+button {
   font-family: inherit;
   font-size: inherit;
 }
@@ -78,9 +80,50 @@ a {
   text-underline-offset: 2px;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="number"],
+select {
   border: 1px solid var(--dark-gray);
   border-radius: 4px;
+  padding: 12px 16px;
+}
+
+input,
+select {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+button {
+  padding: 12px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.button-group {
+  display: flex;
+  margin-top: auto;
+}
+
+.button-group__button--first {
+  margin-right: 16px;
+}
+
+.button--primary {
+  background-color: var(--green);
+  color: var(--white);
+  border: 1px solid var(--green);
+}
+
+.button--secondary {
+  background-color: var(--white);
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+.button__icon {
+  margin-left: 8px;
 }
 
 .container {
@@ -111,6 +154,12 @@ input[type="text"] {
   overflow-y: scroll;
 }
 
+.box--step2 {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .box__header {
   display: flex;
   flex-direction: column;
@@ -120,6 +169,19 @@ input[type="text"] {
 .box__input {
   padding: 12px 56px 12px 16px;
   background: url(/icons/search.svg) no-repeat right 16px bottom 50% / 24px;
+}
+
+.box__content {
+  flex: 1;
+  margin-right: 64px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box__image {
+  flex: 1;
+  min-width: 0;
 }
 
 .list {
