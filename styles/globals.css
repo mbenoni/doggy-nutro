@@ -44,6 +44,11 @@ h3 {
   margin: 0 0 8px;
 }
 
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 header {
   background-color: var(--white);
   padding: 31px 16px;
@@ -63,6 +68,11 @@ a {
   text-underline-offset: 2px;
 }
 
+input[type="text"] {
+  border: 1px solid var(--dark-gray);
+  border-radius: 4px;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -76,6 +86,36 @@ a {
 
 .logo {
   width: 162px;
+}
+
+.box {
+  background-color: var(--white);
+  box-shadow: 0 4px 75px 0 rgba(0, 0, 0, 0.07);
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.box--step1 {
+  height: 640px;
+  overflow-y: scroll;
+}
+
+.box__header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.box__input {
+  padding: 12px 56px 12px 16px;
+  background: url(/icons/search.svg) no-repeat right 16px bottom 50% / 24px;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -104,5 +144,15 @@ a {
 
   .logo {
     width: 267px;
+  }
+
+  .box__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .box__input {
+    width: 400px;
   }
 }
