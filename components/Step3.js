@@ -1,3 +1,5 @@
+import { capitalizeWord } from '../helpers';
+
 export default function Step3({ weight, product }) {
   const activityLevels = {
     active: 3,
@@ -14,7 +16,7 @@ export default function Step3({ weight, product }) {
       <div className="box box--step3">
         <div className="box__content">
           <h3>Ditt resultat! Hunden din trenger {kcal} kcal om dagen.</h3>
-          <p>Din hund vil nyte godt av <strong>DoggyNutro {product}</strong>! Næringsinnholdet i dette fôret vil gi hunden din nøyaktig det den trenger.</p>
+          <p>Din hund vil nyte godt av <strong>DoggyNutro {capitalizeWord(product)}</strong>! Næringsinnholdet i dette fôret vil gi hunden din nøyaktig det den trenger.</p>
           <p>Kun premium hundemat er det beste for din hund!</p>
 
           <div className="button-group">
@@ -33,7 +35,7 @@ export default function Step3({ weight, product }) {
         <img
           className="box__image"
           src={`/products/${product}.jpg`}
-          alt={`Produktemballasje for DoggyNutro ${product}`}
+          alt={`Produktemballasje for DoggyNutro ${capitalizeWord(product)}`}
         />
       </div>
     </section>
