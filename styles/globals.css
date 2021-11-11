@@ -103,12 +103,11 @@ button {
 }
 
 .button-group {
-  display: flex;
   margin-top: auto;
 }
 
 .button-group__button--first {
-  margin-right: 16px;
+  margin-bottom: 8px;
 }
 
 .button--primary {
@@ -155,14 +154,12 @@ button {
   overflow-y: scroll;
 }
 
-.box--step2 {
-  padding: 0;
-}
-
 .box--step2,
 .box--step3 {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-between;
+  padding: 0;
 }
 
 .box__header {
@@ -246,6 +243,11 @@ button {
     width: 267px;
   }
 
+  .box--step2,
+  .box--step3 {
+    flex-direction: row;
+  }
+
   .box__header {
     flex-direction: row;
     justify-content: space-between;
@@ -254,5 +256,16 @@ button {
 
   .box__input {
     width: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .button-group {
+    display: flex;
+  }
+
+  .button-group__button--first {
+    margin-right: 16px;
+    margin-bottom: 0;
   }
 }
