@@ -1,3 +1,5 @@
+import BreedItem from '../components/BreedItem';
+
 export default function Step1(props) {
   const {
     dogBreeds,
@@ -9,6 +11,17 @@ export default function Step1(props) {
 
   const filteredDogBreeds = dogBreeds.filter(dogBreed => {
     return dogBreed.name.toLowerCase().includes(searchQuery.toLowerCase());
+  });
+
+  const breedItems = filteredDogBreeds.map(dogBreed => {
+    return (
+      <BreedItem
+        key={dogBreed.id}
+        dogBreed={dogBreed}
+        selectedBreed={selectedBreed}
+        handleSelectedBreedChange={handleSelectedBreedChange}
+      />
+    );
   });
 
   return (
@@ -32,7 +45,7 @@ export default function Step1(props) {
             onChange={handleSearchQueryChange}
           />
         </div>
-        <ul className="list"></ul>
+        <ul className="list">{breedItems}</ul>
       </div>
     </section>
   );
