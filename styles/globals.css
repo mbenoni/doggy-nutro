@@ -156,6 +156,10 @@ button {
 
 .box--step2 {
   padding: 0;
+}
+
+.box--step2,
+.box--step3 {
   display: flex;
   justify-content: space-between;
 }

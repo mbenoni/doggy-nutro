@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from '../components/Header';
 import Step1 from '../components/Step1';
 import Step2 from '../components/Step2';
+import Step3 from '../components/Step3';
 
 export async function getStaticProps() {
   const res = await fetch('https://api.thedogapi.com/v1/breeds', {
@@ -71,6 +72,11 @@ export default function Home({ dogBreeds }) {
                            handleStepClick={handleStepClick}
                            handleWeightChange={handleWeightChange}
                            handleProductChange={handleProductChange}
+                         />}
+
+          {step === 3 && <Step3
+                           weight={weight}
+                           product={product}
                          />}
         </div>
       </main>
