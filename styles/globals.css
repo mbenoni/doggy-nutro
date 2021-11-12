@@ -141,6 +141,10 @@ button {
   width: 162px;
 }
 
+.intro-text {
+  margin-bottom: 40px;
+}
+
 .box {
   background-color: var(--white);
   box-shadow: 0 4px 75px 0 rgba(0, 0, 0, 0.07);

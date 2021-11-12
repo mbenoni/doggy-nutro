@@ -25,28 +25,32 @@ export default function Step1(props) {
   });
 
   return (
-    <section>
+    <>
       <h1>Ernæringsveilederen</h1>
-      <p>
+      <p className="intro-text">
         Visste du hvor viktig det er å velge riktig fôr til din hund? Prøv
         vår enkle ernæringsveileder som hjelper deg å velge riktig ernæring
         til din firbeinte venn. Svar på noen enkle spørsmål og få veiledning
         til hvilket fôr du bør velge. Gi hunden din det aller beste den kan få!
       </p>
 
-      <div className="box box--step1">
-        <div className="box__header">
-          <h3>Velg din hunderase</h3>
-          <input
-            className="box__input"
-            type="text"
-            placeholder="Søk etter hunderaser"
-            value={searchQuery}
-            onChange={handleSearchQueryChange}
-          />
+      <section>
+        <h2>Velg din hunderase</h2>
+
+        <div className="box box--step1">
+          <div className="box__header">
+            <h3>Bla eller søk etter hunderase</h3>
+            <input
+              className="box__input"
+              type="text"
+              placeholder="Søk etter hunderaser"
+              value={searchQuery}
+              onChange={handleSearchQueryChange}
+            />
+          </div>
+          <ul className="list">{breedItems}</ul>
         </div>
-        <ul className="list">{breedItems}</ul>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
