@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useState } from 'react';
 import Header from '../components/Header';
 import Step1 from '../components/Step1';
@@ -54,6 +55,15 @@ export default function Home({ dogBreeds }) {
 
   return (
     <>
+      <Head>
+        <title>Ernæringsveilederen | Doggy Nutro</title>
+        <meta
+          name="description"
+          content="Riktig fôr er viktig for at hunden din skal ha det bra. Bruk
+                   vår enkle ernæringsveileder for å finne det
+                   beste fôret for akkurat din hund!" />
+      </Head>
+
       <Header />
 
       <main>
