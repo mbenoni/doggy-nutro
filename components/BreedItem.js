@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function BreedItem(props) {
   const {
     dogBreed,
@@ -16,11 +18,16 @@ export default function BreedItem(props) {
         />
 
         <div className="list__content">
-          <img
-            className="list__image"
-            src={dogBreed.image.url}
-            alt={dogBreed.name}
-          />
+          <div className="list__image">
+            <Image
+              src={dogBreed.image.url}
+              alt={dogBreed.name}
+              layout="fill"
+              objectFit="cover"
+              sizes="(min-width: 768px) 277px,
+                     423px"
+            />
+          </div>
           {dogBreed.name}
         </div>
       </label>
