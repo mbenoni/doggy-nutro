@@ -154,8 +154,7 @@ button {
 }
 
 .box--step1 {
-  height: 640px;
-  overflow-y: scroll;
+  padding: 20px 0;
 }
 
 .box--step2,
@@ -163,13 +162,13 @@ button {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
-  padding: 0;
 }
 
 .box__header {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  padding: 0 20px 0;
 }
 
 .box__input {
@@ -180,7 +179,6 @@ button {
 .box__content {
   flex: 1;
   margin-right: 64px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -193,7 +191,9 @@ button {
 .list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px 0;
+  height: 538px;
+  overflow-y: scroll;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
