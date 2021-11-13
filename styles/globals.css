@@ -206,12 +206,14 @@ button {
 }
 
 .list__content {
+  display: block;
   padding: 4px;
   border: 4px solid transparent;
   border-radius: 4px;
 }
 
 .list__image {
+  display: block;
   position: relative;
   aspect-ratio: 1 / 1;
   margin-bottom: 5px;

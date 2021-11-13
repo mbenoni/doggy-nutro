@@ -17,8 +17,8 @@ export default function BreedItem(props) {
           onChange={handleSelectedBreedChange}
         />
 
-        <div className="list__content">
-          <div className="list__image">
+        <span className="list__content">
+          <span className="list__image">
             <Image
               src={dogBreed.image.url}
               alt={dogBreed.name}
@@ -27,9 +27,9 @@ export default function BreedItem(props) {
               sizes="(min-width: 768px) 277px,
                      423px"
             />
-          </div>
+          </span>
           {dogBreed.name}
-        </div>
+        </span>
       </label>
     </li>
   );
