@@ -212,6 +212,11 @@ button {
   border-radius: 4px;
 }
 
+.list__content:hover {
+  border-color: #4c4c4c;
+  background-color:rgba(0, 0, 0, 0.07);
+}
+
 .list__image {
   display: block;
   position: relative;
