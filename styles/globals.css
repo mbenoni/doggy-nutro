@@ -302,7 +302,7 @@ button {
   }
 
   .box__content {
-    margin-right: 120px;
+    margin-right: 40px;
     padding: 20px 0 20px 20px;
   }
 
@@ -320,5 +320,9 @@ button {
   .button-group__button--first {
     margin-right: 16px;
     margin-bottom: 0;
+  }
+
+  .box__content {
+    margin-right: 120px;
   }
 }
