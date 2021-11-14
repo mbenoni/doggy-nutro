@@ -161,7 +161,6 @@ button {
   background-color: var(--white);
   box-shadow: 0 4px 75px 0 rgba(0, 0, 0, 0.07);
   margin-top: 28px;
-  padding: 20px;
   border-radius: 4px;
 }
 
@@ -196,14 +195,17 @@ button {
 
 .box__content {
   flex: 1;
-  margin-right: 64px;
   display: flex;
   flex-direction: column;
+  padding: 0 20px 20px;
 }
 
 .box__image {
   flex: 1;
   min-width: 0;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 16px;
 }
 
 .list {
@@ -288,6 +290,16 @@ button {
 
   .box__input {
     width: 400px;
+  }
+
+  .box__content {
+    margin-right: 120px;
+    padding: 20px 0 20px 20px;
+  }
+
+  .box__image {
+    margin-bottom: 0;
+    padding: 20px 20px 20px 0;
   }
 }
 
