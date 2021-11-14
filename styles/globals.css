@@ -184,8 +184,8 @@ button {
 
 .box__label-text  {
   display: inline-block;
-  font-size: 24px;
-  margin: 0 0 16px;
+  font-size: 20px;
+  margin: 0 0 8px;
 }
 
 .box__input {
@@ -286,6 +286,11 @@ button {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .box__label-text {
+    font-size: 24px;
+    margin: 0 0 16px;
   }
 
   .box__input {
