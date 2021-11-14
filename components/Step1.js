@@ -48,7 +48,12 @@ export default function Step1(props) {
               onChange={handleSearchQueryChange}
             />
           </div>
-          <ul className="list">{breedItems}</ul>
+          {breedItems.length > 0
+            ? <ul className="list">{breedItems}</ul>
+            : <div className="empty-result">
+                Beklager, vi fant ingen resultater. Prøv igjen med et annet søk.
+              </div>
+          }
         </div>
       </section>
     </>

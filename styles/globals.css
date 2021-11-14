@@ -242,6 +242,11 @@ button {
   margin-bottom: 4px;
 }
 
+.empty-result {
+  padding: 0 20px;
+  height: 538px;
+}
+
 @media (min-width: 768px) {
   header {
     padding: 28px 16px;
