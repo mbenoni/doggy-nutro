@@ -183,6 +183,12 @@ button {
   padding: 0 20px 0;
 }
 
+.box__label-text  {
+  display: inline-block;
+  font-size: 24px;
+  margin: 0 0 16px;
+}
+
 .box__input {
   padding: 12px 56px 12px 16px;
   background: url(/icons/search.svg) no-repeat right 16px bottom 50% / 24px;

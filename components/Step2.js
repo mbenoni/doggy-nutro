@@ -16,23 +16,27 @@ export default function Step2(props) {
 
       <div className="box box--step2">
         <div className="box__content">
-          <h3>Skriv inn vekt på din hund</h3>
-          <input
-            type="number"
-            placeholder="Vekt i kg"
-            value={weight}
-            onChange={handleWeightChange}
-          />
+          <label>
+            <span className="box__label-text">Skriv inn vekt på din hund</span>
+            <input
+              type="number"
+              placeholder="Vekt i kg"
+              value={weight}
+              onChange={handleWeightChange}
+            />
+          </label>
 
-          <h3>Velg din hunds aktivitetsnivå</h3>
-          <select onChange={handleProductChange}>
-            <option selected disabled>Aktivitetsnivå</option>
-            <option value="sensitive">Normal</option>
-            <option value="active">Svært aktiv</option>
-            <option value="active">Brukshund</option>
-            <option value="senior">Inaktiv, senior</option>
-            <option value="sensitive">Overvektig</option>
-          </select>
+          <label>
+            <span className="box__label-text">Velg din hunds aktivitetsnivå</span>
+            <select onChange={handleProductChange}>
+              <option selected disabled>Aktivitetsnivå</option>
+              <option value="sensitive">Normal</option>
+              <option value="active">Svært aktiv</option>
+              <option value="active">Brukshund</option>
+              <option value="senior">Inaktiv, senior</option>
+              <option value="sensitive">Overvektig</option>
+            </select>
+          </label>
 
           <div className="button-group">
             <button
