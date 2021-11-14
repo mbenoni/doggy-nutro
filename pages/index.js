@@ -79,6 +79,7 @@ export default function Home({ dogBreeds }) {
           {step === 2 && <Step2
                            selectedBreed={selectedBreed}
                            weight={weight}
+                           product={product}
                            handleStepClick={handleStepClick}
                            handleWeightChange={handleWeightChange}
                            handleProductChange={handleProductChange}

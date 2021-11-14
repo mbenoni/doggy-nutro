@@ -2,10 +2,13 @@ export default function Step2(props) {
   const {
     selectedBreed,
     weight,
+    product,
     handleStepClick,
     handleWeightChange,
     handleProductChange,
   } = props;
+
+  const isEnabled = weight >= 1 && product;
 
   return (
     <section>
@@ -40,8 +43,9 @@ export default function Step2(props) {
             </button>
 
             <button
-              className="button--primary"
+              className={`button--primary ${!isEnabled ? 'button--disabled' : ''}`}
               onClick={() => handleStepClick(1)}
+              disabled={!isEnabled}
             >
               Gå til resultat
             </button>
